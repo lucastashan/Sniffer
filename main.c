@@ -18,6 +18,10 @@
 #include <netinet/in.h> //definicao de protocolos
 #include <netinet/ip.h>	//Provides declarations for ip header
 #include <netinet/tcp.h>	//Provides declarations for tcp header
+#include <netinet/udp.h>	//Provides declarations for udp header
+#include <netinet/icmp6.h>	//Provides declarations for icmpv6 header
+#include <netinet/ip_icmp.h>	//Provides declarations for icmp header
+#include <net/if_arp.h>	//Provides declarations for arp header
 
 #include <arpa/inet.h> //funcoes para manipulacao de enderecos IP
 
@@ -30,6 +34,8 @@ void print_tcp_packet();
 void print_ipv4_header();
 void print_ipv6_header();
 void print_ethernet_header();
+void print_udp_packet();
+void print_icmpv6_packet();
 
 
 // Atencao!! Confira no /usr/include do seu sisop o nome correto
@@ -41,6 +47,19 @@ void print_ethernet_header();
   int on;
   struct ifreq ifr;
   int total=0, tcp=0, others=0;
+
+struct ipv6_header
+{
+  unsigned int traffic_class1:4;		
+  unsigned int version:4;
+  unsigned int traffic_class2:4;
+  unsigned int flow_label : 20;
+  uint16_t length;
+  uint8_t  next_header;
+  uint8_t  hop_limit;
+  struct in6_addr src;
+  struct in6_addr dst;
+};
 
 int main(int argc,char *argv[])
 {
@@ -90,14 +109,19 @@ void process_packet() {
   struct ethhdr *eth = (struct ethhdr *)&buff1[0];
   
   total++;
+  // Mostra o cabecalho ethernet
   print_ethernet_header();
-  switch (htons(eth->h_proto)){
+
+   switch (htons(eth->h_proto)){
     // Trafego IPv4
     case ETHERTYPE_IP:
       print_ipv4_header();
       break;
     // Trafego IPv6
     case ETHERTYPE_IPV6:
+      print_ipv6_header();
+      break;
+    case ETHERTYPE_ARP:
       break;
     default:
       others++;
@@ -114,12 +138,12 @@ void print_ethernet_header() {
   printf("   |-Protocol            : 0x%x \n",htons(eth->h_proto));
 }
 
-void print_tcp_packet() {
+void print_tcp_packet(int leng) {
   unsigned short iphdrlen;
-  struct iphdr *iph = (struct iphdr *)&buff1[14];
+  struct iphdr *iph = (struct iphdr *)&buff1[(14+leng)];
   iphdrlen = iph->ihl*4;
   
-  struct tcphdr *tcph = (struct tcphdr*)(&buff1[14] + iphdrlen);   
+  struct tcphdr *tcph = (struct tcphdr*)(&buff1[(14+leng)]);   
 
   printf("----------------TCP Packet----------------\n");
 
@@ -140,27 +164,101 @@ void print_tcp_packet() {
   printf("       | -Urgent Pointer : %d\n",tcph->urg_ptr);
 }
 
-void print_ipv4_header() {
-  //Get the IP Header part of this packet
-  struct iphdr *iph = (struct iphdr *)&buff1[14];
- 
-  printf("IPv4 Header\n");
-  printf("    | -IP version: %d\n", iph->version);
-  printf("    | -IP Header Length: %d Bytes\n", ((unsigned int)(iph->ihl))*4);
-  printf("    | -Type of service: %d\n", (unsigned int)iph->tos);
-  printf("    | -Total length: %d Bytes(size of packet)\n", ntohs(iph->tot_len));
-  printf("    | -Identification: %d\n", ntohs(iph->id));
-  printf("    | -TTL: %d\n", (unsigned int)iph->ttl);
-  printf("    | -Protocol: %d\n", (unsigned int)iph->protocol);
-  printf("    | -Checksum: %d\n", ntohs(iph->check));
+void print_udp_packet(int leng){
 
-  if( (unsigned int)iph->protocol == 6 ) print_tcp_packet();
+struct udphdr *udph = (struct udphdr*)&buff1[(14+leng)];
+	
+printf("\n***********************UDP Packet*************************\n");			
+printf("UDP Header\n");
+printf("   |-Source Port      : %d\n" , ntohs(udph->source));
+printf("   |-Destination Port : %d\n" , ntohs(udph->dest));
+printf("   |-UDP Length       : %d Bytes\n" , ntohs(udph->len));
+printf("   |-UDP Checksum     : %d\n" , ntohs(udph->check));
+	
+//printf("\n");
+//	fprintf(logfile,"IP Header\n");
+//	PrintData(Buffer , iphdrlen);
+		
+//	fprintf(logfile,"UDP Header\n");
+//	PrintData(Buffer+iphdrlen , sizeof udph);
+		
+//	fprintf(logfile,"Data Payload\n");	
+//	PrintData(Buffer + iphdrlen + sizeof udph ,( Size - sizeof udph - iph->ihl * 4 ));
+	
+//	fprintf(logfile,"\n###########################################################");
 }
 
-// void print_ipv6_header() {
-//   //Get the IP Header part of this packet
-//   struct in6_addr *iph = (struct in6_addr *)&buff1[14];
+void print_icmp_packet(int leng) {
+  struct icmp *icmph = (struct icmp *)&buff1[leng+14];
 
-//   printf("IPv6 Header\n");
-//   printf("    | -IP version: %d\n", iph->);
-// }
+  printf("ICMP Header\n");
+  printf("    | -Type: %d\n", icmph->icmp_type);
+  printf("    | -Code: %d\n", icmph->icmp_code);
+  printf("    | -Checksum: %d\n", icmph->icmp_cksum);
+}
+
+void print_icmpv6_packet() {
+  struct icmp6_hdr *icmpv6 = (struct icmp6_hdr *)&buff1[54];
+
+  printf("ICMPv6 Header\n");
+  printf("    | -Type: %d\n", icmpv6->icmp6_type);
+  printf("    | -Code: %d\n", icmpv6->icmp6_code);
+  printf("    | -Checksum: %d\n", icmpv6->icmp6_cksum);
+
+}
+
+void print_ipv4_header() {
+  //Get the IP Header part of this packet
+  struct ip *ip4 = (struct ip *)&buff1[14];
+  int hleng = (ip4->ip_hl)*4;
+ 
+  printf("IPv4 Header\n");
+  printf("    | -IP version: %d\n", ip4->ip_v);
+  printf("    | -IP Header Length: %u Bytes\n", hleng);
+  printf("    | -Type of service: %d\n", (unsigned int)ip4->ip_tos);
+  printf("    | -Total length: %d Bytes(size of packet)\n", ntohs(ip4->ip_len));
+  printf("    | -Identification: %d\n", ntohs(ip4->ip_id));
+  printf("    | -Fragment Offset: %d\n", ip4->ip_off);
+  printf("    | -TTL: %d\n", ip4->ip_ttl);
+  printf("    | -Protocol: %d\n", ip4->ip_p);
+  printf("    | -Checksum: %u\n", ntohs(ip4->ip_sum));
+  printf("    | -Source Address: %s\n", inet_ntoa(ip4->ip_src));
+  printf("    | -Destination Address: %s\n", inet_ntoa(ip4->ip_dst));
+
+  if( (unsigned int)ip4->ip_p == 6 ) print_tcp_packet(hleng);
+  else if( (unsigned int)ip4->ip_p == 17 ) print_udp_packet(hleng);
+  else if( (unsigned int)ip4->ip_p == 1 ) print_icmp_packet(hleng);
+}
+
+void print_ipv6_header() { 
+  struct ipv6_header *ip6 = (struct ipv6_header *)&buff1[14];
+  char sourcAddr[INET6_ADDRSTRLEN], destAddr[INET6_ADDRSTRLEN];
+  inet_ntop(AF_INET6, &(ip6->src), sourcAddr, INET6_ADDRSTRLEN);
+  inet_ntop(AF_INET6, &(ip6->src), destAddr, INET6_ADDRSTRLEN);
+  int traffic_class = (ip6->traffic_class1 << 4) | ip6->traffic_class2;
+
+  printf("IPv6 Header\n");
+  printf("    | -IP version: %d\n", ip6->version);
+  printf("    | -Traffic class: %d\n", traffic_class);
+  printf("    | -Flow label: %d\n", ip6->flow_label);
+  printf("    | -Length: %d Bytes\n", ip6->length);
+  printf("    | -Next header: %d\n", ip6->next_header);
+  printf("    | -Hop Limit: %d\n", ip6->hop_limit);
+  printf("    | -Source Address: %s\n", sourcAddr);
+  printf("    | -Destination Address: %s\n", destAddr);
+
+  if( (ip6->next_header) == 6 ) print_tcp_packet(40);
+  else if( (ip6->next_header) == 17 ) print_udp_packet(40);
+  else if( (ip6->next_header) == 58 ) print_icmpv6_packet();
+}
+
+void print_arp_header() {
+  struct arphdr *arph = (struct arphdr *)&buff1[14];
+
+  printf("ARP Header\n");
+  printf("    | -Format hardware address: %d\n", arph->ar_hrd);
+  printf("    | -Format of protocol address: %d\n", arph->ar_pro);
+  printf("    | -Length of hardware address: %d\n", arph->ar_hln);
+  printf("    | -Length of protocol address: %d\n", arph->ar_pln);
+  printf("    | -ARP opcode: %d\n", arph->ar_op);
+}
