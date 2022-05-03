@@ -103,8 +103,7 @@ int main(int argc,char *argv[])
     {
       printf("Recv error, failed to get packets\n");
       return 1;
-    }
-     
+    }     
 		// impressao do conteudo - exemplo Endereco Destino e Endereco Origem
 		//printf("MAC Destino: %x:%x:%x:%x:%x:%x \n", buff1[0],buff1[1],buff1[2],buff1[3],buff1[4],buff1[5]);
 		//printf("MAC Origem:  %x:%x:%x:%x:%x:%x \n", buff1[6],buff1[7],buff1[8],buff1[9],buff1[10],buff1[11]);
@@ -124,10 +123,16 @@ int main(int argc,char *argv[])
   fprintf(logfile,"- Pacotes ICMPv6: %.2f%%\n", getPercent(icmpv6));
   fprintf(logfile,"- Pacotes TCP: %.2f%%\n", getPercent(tcp));
   fprintf(logfile,"- Pacotes UDP: %.2f%%\n", getPercent(udp));
-  fprintf(logfile,"- Outros: %d\n", others);
-  fprintf(logfile,"- Protocolo de aplicação mais usado nas transmissões: %d\n", others);
-  fprintf(logfile,"- Protocolo de aplicação mais usado nas recepções: %d\n", others);
-
+  if ( transfhttps > transfdns ) 
+    fprintf(logfile,"- Protocolo de aplicação mais usado nas transmissões: HTTPS\n");
+  else
+    fprintf(logfile,"- Protocolo de aplicação mais usado nas transmissões: DNS\n");
+  if ( rechttps > transfdns )
+    fprintf(logfile,"- Protocolo de aplicação mais usado nas recepções: HTTPS\n");
+  else
+    fprintf(logfile,"- Protocolo de aplicação mais usado nas recepções: DNS\n");
+  struct ethhdr *eth = (struct ethhdr *)&buff1[0];
+  
   fclose(logfile);
   close(sockd);
   printf("Finished.\n");

@@ -1,23 +1,1020 @@
 Ethernet Header
+   |-Destination Address : 33-33-00-00-00-01 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 9
+   | -Flow label       : 434592
+   | -Length           : 32768 Bytes
+   | -Next header      : 58
+   | -Hop Limit        : 255
+   | -Source Address   : fe80::6802:b8ff:fee0:f6f
+   | -Destination Address: fe80::6802:b8ff:fee0:f6f
+ICMPv6 Header
+   | -Type     : 134
+   | -Code     : 0
+   | -Checksum : 53032
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 6
+   | -Flow label       : 244528
+   | -Length           : 11520 Bytes
+   | -Next header      : 6
+   | -Hop Limit        : 59
+   | -Source Address   : 2606:4700:4400::6812:215e
+   | -Destination Address: 2606:4700:4400::6812:215e
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 57122
+   | -Sequence number: 184262805
+   | -Acknowledge Number : 432827576
+   | -Header Length      : 5 DWORDS or 20 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 120
+   | -Checksum       : 38842
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
    |-Destination Address : 6A-02-B8-E0-0F-6F 
    |-Source Address      : A4-63-A1-1A-45-95 
    |-Protocol            : 0x86dd 
 IPv6 Header
    | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 1021504
-   | -Length           : 41472 Bytes
-   | -Next header      : 17
+   | -Traffic class    : 12
+   | -Flow label       : 351616
+   | -Length           : 12544 Bytes
+   | -Next header      : 6
    | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 57122
+   | -Destination Port: 443
+   | -Sequence number: 432827576
+   | -Acknowledge Number : 184262830
+   | -Header Length      : 5 DWORDS or 20 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 5978
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-16 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 29696 Bytes
+   | -Next header      : 0
+   | -Hop Limit        : 1
+   | -Source Address   : fe80::2831:9827:56d7:be6
+   | -Destination Address: fe80::2831:9827:56d7:be6
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 6
+   | -Flow label       : 244528
+   | -Length           : 5120 Bytes
+   | -Next header      : 6
+   | -Hop Limit        : 59
+   | -Source Address   : 2606:4700:4400::6812:215e
+   | -Destination Address: 2606:4700:4400::6812:215e
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 57122
+   | -Sequence number: 184262830
+   | -Acknowledge Number : 432827605
+   | -Header Length      : 5 DWORDS or 20 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 120
+   | -Checksum       : 34065
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 109 Bytes(size of packet)
+   | -Identification   : 63838
+   | -Fragment Offset  : 0
+   | -TTL              : 53
+   | -Protocol         : 6
+   | -Checksum         : 55840
+   | -Source Address   : 192.16.48.200
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 42994
+   | -Sequence number: 2399568899
+   | -Acknowledge Number : 1987835244
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 136
+   | -Checksum       : 39899
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 76 Bytes(size of packet)
+   | -Identification   : 63839
+   | -Fragment Offset  : 0
+   | -TTL              : 53
+   | -Protocol         : 6
+   | -Checksum         : 55872
+   | -Source Address   : 192.16.48.200
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 42994
+   | -Sequence number: 2399568956
+   | -Acknowledge Number : 1987835244
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 136
+   | -Checksum       : 19919
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 63840
+   | -Fragment Offset  : 0
+   | -TTL              : 53
+   | -Protocol         : 6
+   | -Checksum         : 55895
+   | -Source Address   : 192.16.48.200
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 42994
+   | -Sequence number: 2399568980
+   | -Acknowledge Number : 1987835244
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 1
+   | -Window: 136
+   | -Checksum       : 30173
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 22003
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 12997
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.16.48.200
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 42994
+   | -Destination Port: 443
+   | -Sequence number: 1987835244
+   | -Acknowledge Number : 2399568981
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 45618
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 22004
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 12996
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.16.48.200
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 42994
+   | -Destination Port: 443
+   | -Sequence number: 1987835244
+   | -Acknowledge Number : 2399568981
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 1
+   | -Window: 501
+   | -Checksum       : 45618
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 63849
+   | -Fragment Offset  : 0
+   | -TTL              : 53
+   | -Protocol         : 6
+   | -Checksum         : 55886
+   | -Source Address   : 192.16.48.200
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 42994
+   | -Sequence number: 2399568980
+   | -Acknowledge Number : 1987835244
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 1
+   | -Window: 136
+   | -Checksum       : 30093
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 64 Bytes(size of packet)
+   | -Identification   : 22005
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 12983
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.16.48.200
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 42994
+   | -Destination Port: 443
+   | -Sequence number: 1987835245
+   | -Acknowledge Number : 2399568981
+   | -Header Length      : 11 DWORDS or 44 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 45630
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 63850
+   | -Fragment Offset  : 0
+   | -TTL              : 53
+   | -Protocol         : 6
+   | -Checksum         : 55885
+   | -Source Address   : 192.16.48.200
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 42994
+   | -Sequence number: 2399568981
+   | -Acknowledge Number : 1987835245
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 136
+   | -Checksum       : 39090
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-16 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 29696 Bytes
+   | -Next header      : 0
+   | -Hop Limit        : 1
+   | -Source Address   : fe80::2831:9827:56d7:be6
+   | -Destination Address: fe80::2831:9827:56d7:be6
+Ethernet Header
+   |-Destination Address : EC-FA-5C-39-99-E7 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 162 Bytes(size of packet)
+   | -Identification   : 26305
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 20858
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.168.0.63
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 39824
+   | -Destination Port: 8009
+   | -Sequence number: 3290745813
+   | -Acknowledge Number : 253280863
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 33455
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 162 Bytes(size of packet)
+   | -Identification   : 35797
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 11366
+   | -Source Address   : 192.168.0.63
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 8009
+   | -Destination Port: 39824
+   | -Sequence number: 253280863
+   | -Acknowledge Number : 3290745923
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 1408
+   | -Checksum       : 3761
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : EC-FA-5C-39-99-E7 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 26306
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 20967
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.168.0.63
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 39824
+   | -Destination Port: 8009
+   | -Sequence number: 3290745923
+   | -Acknowledge Number : 253280973
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 33345
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : FF-FF-FF-FF-FF-FF 
+   |-Source Address      : 68-57-2D-BE-60-23 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 200 Bytes(size of packet)
+   | -Identification   : 2392
+   | -Fragment Offset  : 0
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 61571
+   | -Source Address   : 192.168.0.161
+   | -Destination Address: 255.255.255.255
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 53380
+   | -Source Port      : 59253
+   | -Destination Port : 6667
+   | -UDP Length       : 180 Bytes
+   | -UDP Checksum     : 36009
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-01 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 9
+   | -Flow label       : 434592
+   | -Length           : 32768 Bytes
+   | -Next header      : 58
+   | -Hop Limit        : 255
+   | -Source Address   : fe80::6802:b8ff:fee0:f6f
+   | -Destination Address: fe80::6802:b8ff:fee0:f6f
+ICMPv6 Header
+   | -Type     : 134
+   | -Code     : 0
+   | -Checksum : 53032
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-16 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 29696 Bytes
+   | -Next header      : 0
+   | -Hop Limit        : 1
+   | -Source Address   : fe80::2831:9827:56d7:be6
+   | -Destination Address: fe80::2831:9827:56d7:be6
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 84 Bytes(size of packet)
+   | -Identification   : 2709
+   | -Fragment Offset  : 64
+   | -TTL              : 43
+   | -Protocol         : 6
+   | -Checksum         : 57614
+   | -Source Address   : 35.174.127.31
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 41614
+   | -Sequence number: 962302244
+   | -Acknowledge Number : 756942943
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 471
+   | -Checksum       : 52296
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 41361
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 13618
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 35.174.127.31
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 41614
+   | -Destination Port: 443
+   | -Sequence number: 756942943
+   | -Acknowledge Number : 962302276
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 25639
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 33-33-00-00-0C-0C 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 12
+   | -Flow label       : 474560
+   | -Length           : 11264 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 4
+   | -Source Address   : 2804:14d:4c86:9375:2048:1734:f8ad:9728
+   | -Destination Address: 2804:14d:4c86:9375:2048:1734:f8ad:9728
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 10101
+   | -Destination Port : 10101
+   | -UDP Length       : 44 Bytes
+   | -UDP Checksum     : 2096
+Ethernet Header
+   |-Destination Address : 33-33-00-00-0C-0C 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 12
+   | -Flow label       : 474560
+   | -Length           : 11264 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 4
+   | -Source Address   : 2804:14d:4c86:9375:2048:1734:f8ad:9728
+   | -Destination Address: 2804:14d:4c86:9375:2048:1734:f8ad:9728
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 10101
+   | -Destination Port : 10101
+   | -UDP Length       : 44 Bytes
+   | -UDP Checksum     : 2096
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-16 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 29696 Bytes
+   | -Next header      : 0
+   | -Hop Limit        : 1
+   | -Source Address   : fe80::2831:9827:56d7:be6
+   | -Destination Address: fe80::2831:9827:56d7:be6
+Ethernet Header
+   |-Destination Address : EC-FA-5C-39-99-E7 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 6029
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 41244
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.168.0.63
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 45312
+   | -Destination Port: 8008
+   | -Sequence number: 1319573213
+   | -Acknowledge Number : 432814911
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 33345
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 59857
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 52951
+   | -Source Address   : 192.168.0.63
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 8008
+   | -Destination Port: 45312
+   | -Sequence number: 432814911
+   | -Acknowledge Number : 1319573214
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 1375
+   | -Checksum       : 8124
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : FF-FF-FF-FF-FF-FF 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 72 Bytes(size of packet)
+   | -Identification   : 32104
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 17
+   | -Checksum         : 14946
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.168.0.255
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 57621
+   | -Destination Port : 57621
+   | -UDP Length       : 52 Bytes
+   | -UDP Checksum     : 33568
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-01 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 9
+   | -Flow label       : 434592
+   | -Length           : 32768 Bytes
+   | -Next header      : 58
+   | -Hop Limit        : 255
+   | -Source Address   : fe80::6802:b8ff:fee0:f6f
+   | -Destination Address: fe80::6802:b8ff:fee0:f6f
+ICMPv6 Header
+   | -Type     : 134
+   | -Code     : 0
+   | -Checksum : 53032
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-16 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 29696 Bytes
+   | -Next header      : 0
+   | -Hop Limit        : 1
+   | -Source Address   : fe80::2831:9827:56d7:be6
+   | -Destination Address: fe80::2831:9827:56d7:be6
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-16 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 29696 Bytes
+   | -Next header      : 0
+   | -Hop Limit        : 1
+   | -Source Address   : fe80::2831:9827:56d7:be6
+   | -Destination Address: fe80::2831:9827:56d7:be6
+Ethernet Header
+   |-Destination Address : EC-FA-5C-39-99-E7 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 162 Bytes(size of packet)
+   | -Identification   : 26307
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 20856
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.168.0.63
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 39824
+   | -Destination Port: 8009
+   | -Sequence number: 3290745923
+   | -Acknowledge Number : 253280973
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 33455
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 162 Bytes(size of packet)
+   | -Identification   : 35798
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 11365
+   | -Source Address   : 192.168.0.63
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 8009
+   | -Destination Port: 39824
+   | -Sequence number: 253280973
+   | -Acknowledge Number : 3290746033
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 1408
+   | -Checksum       : 13873
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : EC-FA-5C-39-99-E7 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 26308
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 20965
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.168.0.63
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 39824
+   | -Destination Port: 8009
+   | -Sequence number: 3290746033
+   | -Acknowledge Number : 253281083
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 33345
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : FF-FF-FF-FF-FF-FF 
+   |-Source Address      : 68-57-2D-BE-60-23 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 200 Bytes(size of packet)
+   | -Identification   : 2393
+   | -Fragment Offset  : 0
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 61570
+   | -Source Address   : 192.168.0.161
+   | -Destination Address: 255.255.255.255
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 59253
+   | -Destination Port : 6667
+   | -UDP Length       : 180 Bytes
+   | -UDP Checksum     : 36009
+Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-FB 
+   |-Source Address      : 0E-E5-E2-96-50-3C 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 122 Bytes(size of packet)
+   | -Identification   : 60799
+   | -Fragment Offset  : 64
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 60417
+   | -Source Address   : 192.168.0.77
+   | -Destination Address: 224.0.0.251
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 5353
+   | -Destination Port : 5353
+   | -UDP Length       : 102 Bytes
+   | -UDP Checksum     : 12371
+Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-FB 
+   |-Source Address      : 0E-E5-E2-96-50-3C 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 122 Bytes(size of packet)
+   | -Identification   : 60800
+   | -Fragment Offset  : 64
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 60416
+   | -Source Address   : 192.168.0.77
+   | -Destination Address: 224.0.0.251
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 5353
+   | -Destination Port : 5353
+   | -UDP Length       : 102 Bytes
+   | -UDP Checksum     : 12371
+Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-16 
+   |-Source Address      : 0E-E5-E2-96-50-3C 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 24 Bytes
+   | -Type of service  : 192
+   | -Total length     : 40 Bytes(size of packet)
+   | -Identification   : 0
+   | -Fragment Offset  : 64
+   | -TTL              : 1
+   | -Protocol         : 2
+   | -Checksum         : 17156
+   | -Source Address   : 192.168.0.77
+   | -Destination Address: 224.0.0.22
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 687264
+   | -Length           : 8709 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 64
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 46617
    | -Destination Port : 443
-   | -UDP Length       : 162 Bytes
-   | -UDP Checksum     : 63475
+   | -UDP Length       : 1314 Bytes
+   | -UDP Checksum     : 11543
  * Aplicação HTTPS * 
 Ethernet Header
    |-Destination Address : A4-63-A1-1A-45-95 
@@ -36,9 +1033,9 @@ IPv6 Header
 ***********************UDP Packet*************************
 UDP Header
    | -Source Port      : 443
-   | -Destination Port : 53380
+   | -Destination Port : 46617
    | -UDP Length       : 35 Bytes
-   | -UDP Checksum     : 15430
+   | -UDP Checksum     : 62634
  * Aplicação HTTPS * 
 Ethernet Header
    |-Destination Address : 6A-02-B8-E0-0F-6F 
@@ -46,41 +1043,20 @@ Ethernet Header
    |-Protocol            : 0x86dd 
 IPv6 Header
    | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 1021504
+   | -Traffic class    : 0
+   | -Flow label       : 687264
    | -Length           : 10496 Bytes
    | -Next header      : 17
    | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 53380
+   | -Source Port      : 46617
    | -Destination Port : 443
    | -UDP Length       : 41 Bytes
-   | -UDP Checksum     : 63354
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 64512 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 53
-   | -Source Address   : 2600:1901:1:c36::
-   | -Destination Address: 2600:1901:1:c36::
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 443
-   | -Destination Port : 53380
-   | -UDP Length       : 252 Bytes
-   | -UDP Checksum     : 10199
+   | -UDP Checksum     : 10270
  * Aplicação HTTPS * 
 Ethernet Header
    |-Destination Address : 6A-02-B8-E0-0F-6F 
@@ -88,421 +1064,51 @@ Ethernet Header
    |-Protocol            : 0x86dd 
 IPv6 Header
    | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 1021504
-   | -Length           : 11008 Bytes
-   | -Next header      : 17
+   | -Traffic class    : 11
+   | -Flow label       : 519072
+   | -Length           : 8192 Bytes
+   | -Next header      : 6
    | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 53380
-   | -Destination Port : 443
-   | -UDP Length       : 43 Bytes
-   | -UDP Checksum     : 63356
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 01-00-5E-00-00-FB 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 73 Bytes(size of packet)
-   | -Identification   : 20123
-   | -Fragment Offset  : 64
-   | -TTL              : 255
-   | -Protocol         : 17
-   | -Checksum         : 35545
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 224.0.0.251
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 5353
-   | -Destination Port : 5353
-   | -UDP Length       : 53 Bytes
-   | -UDP Checksum     : 41589
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-FB 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 119568
-   | -Length           : 13568 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 255
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 5353
-   | -Destination Port : 5353
-   | -UDP Length       : 53 Bytes
-   | -UDP Checksum     : 8667
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-FB 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 119568
-   | -Length           : 13568 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 255
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 5353
-   | -Destination Port : 5353
-   | -UDP Length       : 53 Bytes
-   | -UDP Checksum     : 8667
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-FB 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 119568
-   | -Length           : 13568 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 255
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 5353
-   | -Destination Port : 5353
-   | -UDP Length       : 53 Bytes
-   | -UDP Checksum     : 8667
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-FB 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 119568
-   | -Length           : 13568 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 255
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 5353
-   | -Destination Port : 5353
-   | -UDP Length       : 53 Bytes
-   | -UDP Checksum     : 8667
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 8448 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 53
-   | -Source Address   : 2600:1901:1:c36::
-   | -Destination Address: 2600:1901:1:c36::
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 443
-   | -Destination Port : 53380
-   | -UDP Length       : 33 Bytes
-   | -UDP Checksum     : 50583
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 1021504
-   | -Length           : 28928 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 53380
-   | -Destination Port : 443
-   | -UDP Length       : 113 Bytes
-   | -UDP Checksum     : 63426
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 1021504
-   | -Length           : 32512 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 53380
-   | -Destination Port : 443
-   | -UDP Length       : 127 Bytes
-   | -UDP Checksum     : 63440
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 8448 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 53
-   | -Source Address   : 2600:1901:1:c36::
-   | -Destination Address: 2600:1901:1:c36::
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 443
-   | -Destination Port : 53380
-   | -UDP Length       : 33 Bytes
-   | -UDP Checksum     : 19156
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 8448 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 53
-   | -Source Address   : 2600:1901:1:c36::
-   | -Destination Address: 2600:1901:1:c36::
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 443
-   | -Destination Port : 53380
-   | -UDP Length       : 33 Bytes
-   | -UDP Checksum     : 41894
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 1021504
-   | -Length           : 10496 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 53380
-   | -Destination Port : 443
-   | -UDP Length       : 41 Bytes
-   | -UDP Checksum     : 63354
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 46848 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 53
-   | -Source Address   : 2600:1901:1:c36::
-   | -Destination Address: 2600:1901:1:c36::
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 443
-   | -Destination Port : 53380
-   | -UDP Length       : 183 Bytes
-   | -UDP Checksum     : 57952
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 58880 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 53
-   | -Source Address   : 2600:1901:1:c36::
-   | -Destination Address: 2600:1901:1:c36::
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 443
-   | -Destination Port : 53380
-   | -UDP Length       : 230 Bytes
-   | -UDP Checksum     : 11479
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 1021504
-   | -Length           : 11008 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 53380
-   | -Destination Port : 443
-   | -UDP Length       : 43 Bytes
-   | -UDP Checksum     : 63356
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 1021504
-   | -Length           : 11008 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 53380
-   | -Destination Port : 443
-   | -UDP Length       : 43 Bytes
-   | -UDP Checksum     : 63356
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 8448 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 53
-   | -Source Address   : 2600:1901:1:c36::
-   | -Destination Address: 2600:1901:1:c36::
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 443
-   | -Destination Port : 53380
-   | -UDP Length       : 33 Bytes
-   | -UDP Checksum     : 23520
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-01 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 9
-   | -Flow label       : 434592
-   | -Length           : 32768 Bytes
-   | -Next header      : 58
-   | -Hop Limit        : 255
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-ICMPv6 Header
-   | -Type     : 134
-   | -Code     : 0
-   | -Checksum : 53032
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-16 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 29696 Bytes
-   | -Next header      : 0
-   | -Hop Limit        : 1
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-16 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 29696 Bytes
-   | -Next header      : 0
-   | -Hop Limit        : 1
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 52 Bytes(size of packet)
-   | -Identification   : 15361
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 13300
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 52.85.213.70
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
 ----------------TCP Packet----------------
 
 TCP Header:
-   | -Source Port: 40522
+   | -Source Port: 54448
    | -Destination Port: 443
-   | -Sequence number: 489444076
-   | -Acknowledge Number : 3533079780
+   | -Sequence number: 1637343803
+   | -Acknowledge Number : 4108600234
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 502
+   | -Checksum       : 10821
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 10
+   | -Flow label       : 513376
+   | -Length           : 8192 Bytes
+   | -Next header      : 6
+   | -Hop Limit        : 64
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 45988
+   | -Destination Port: 443
+   | -Sequence number: 3417836492
+   | -Acknowledge Number : 1502341447
    | -Header Length      : 8 DWORDS or 32 BYTES
    | -Urgent Flag         : 0
    | -Acknowledgement Flag : 1
@@ -511,32 +1117,87 @@ TCP Header:
    | -Synchronise Flag     : 0
    | -Finish Flag          : 0
    | -Window: 501
-   | -Checksum       : 51957
+   | -Checksum       : 10250
    | -Urgent Pointer : 0
  * Aplicação HTTPS * 
 Ethernet Header
    |-Destination Address : A4-63-A1-1A-45-95 
    |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 19200 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 53
+   | -Source Address   : 2600:1901:1:c36::
+   | -Destination Address: 2600:1901:1:c36::
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 443
+   | -Destination Port : 46617
+   | -UDP Length       : 75 Bytes
+   | -UDP Checksum     : 57201
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 687264
+   | -Length           : 11008 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 64
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 46617
+   | -Destination Port : 443
+   | -UDP Length       : 43 Bytes
+   | -UDP Checksum     : 10272
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-16 
+   |-Source Address      : 0E-E5-E2-96-50-3C 
    |-Protocol            : 0x800 
 IPv4 Header
    | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 52 Bytes(size of packet)
-   | -Identification   : 23248
-   | -Fragment Offset  : 0
-   | -TTL              : 241
-   | -Protocol         : 6
-   | -Checksum         : 42020
-   | -Source Address   : 52.85.213.70
-   | -Destination Address: 192.168.0.139
+   | -IP Header Length : 24 Bytes
+   | -Type of service  : 192
+   | -Total length     : 40 Bytes(size of packet)
+   | -Identification   : 0
+   | -Fragment Offset  : 64
+   | -TTL              : 1
+   | -Protocol         : 2
+   | -Checksum         : 17156
+   | -Source Address   : 192.168.0.77
+   | -Destination Address: 224.0.0.22
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 10
+   | -Flow label       : 262064
+   | -Length           : 8192 Bytes
+   | -Next header      : 6
+   | -Hop Limit        : 53
+   | -Source Address   : 2600:1901:1:e71::
+   | -Destination Address: 2600:1901:1:e71::
 ----------------TCP Packet----------------
 
 TCP Header:
    | -Source Port: 443
-   | -Destination Port: 40522
-   | -Sequence number: 3533079780
-   | -Acknowledge Number : 489444077
+   | -Destination Port: 54448
+   | -Sequence number: 4108600234
+   | -Acknowledge Number : 1637343804
    | -Header Length      : 8 DWORDS or 32 BYTES
    | -Urgent Flag         : 0
    | -Acknowledgement Flag : 1
@@ -544,33 +1205,128 @@ TCP Header:
    | -Reset Flag           : 0
    | -Synchronise Flag     : 0
    | -Finish Flag          : 0
-   | -Window: 133
-   | -Checksum       : 5314
+   | -Window: 261
+   | -Checksum       : 13723
    | -Urgent Pointer : 0
  * Aplicação HTTPS * 
 Ethernet Header
-   |-Destination Address : 01-00-5E-7F-FF-FA 
-   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 2
+   | -Flow label       : 948288
+   | -Length           : 8192 Bytes
+   | -Next header      : 6
+   | -Hop Limit        : 117
+   | -Source Address   : 2600:1901:1:c36::
+   | -Destination Address: 2600:1901:1:c36::
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 45988
+   | -Sequence number: 1502341447
+   | -Acknowledge Number : 3417836493
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 265
+   | -Checksum       : 22405
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 8448 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 53
+   | -Source Address   : 2600:1901:1:c36::
+   | -Destination Address: 2600:1901:1:c36::
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 443
+   | -Destination Port : 46617
+   | -UDP Length       : 33 Bytes
+   | -UDP Checksum     : 45433
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-FB 
+   |-Source Address      : 0E-E5-E2-96-50-3C 
    |-Protocol            : 0x800 
 IPv4 Header
    | -IP version       : 4
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
-   | -Total length     : 153 Bytes(size of packet)
-   | -Identification   : 47456
+   | -Total length     : 122 Bytes(size of packet)
+   | -Identification   : 60922
    | -Fragment Offset  : 64
    | -TTL              : 255
    | -Protocol         : 17
-   | -Checksum         : 4293
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 239.255.255.250
+   | -Checksum         : 60294
+   | -Source Address   : 192.168.0.77
+   | -Destination Address: 224.0.0.251
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 49015
-   | -Destination Port : 1900
-   | -UDP Length       : 133 Bytes
-   | -UDP Checksum     : 45508
+   | -Source Port      : 5353
+   | -Destination Port : 5353
+   | -UDP Length       : 102 Bytes
+   | -UDP Checksum     : 12371
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x806 
+ARP Header
+   | -Format hardware address    : 256
+   | -Format of protocol address : 8
+   | -Length of hardware address : 6
+   | -Length of protocol address : 4
+   | -ARP opcode                 : 256
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x806 
+ARP Header
+   | -Format hardware address    : 256
+   | -Format of protocol address : 8
+   | -Length of hardware address : 6
+   | -Length of protocol address : 4
+   | -ARP opcode                 : 512
+Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-FB 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 378 Bytes(size of packet)
+   | -Identification   : 43796
+   | -Fragment Offset  : 64
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 11643
+   | -Source Address   : 192.168.0.63
+   | -Destination Address: 224.0.0.251
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 5353
+   | -Destination Port : 5353
+   | -UDP Length       : 358 Bytes
+   | -UDP Checksum     : 30732
 Ethernet Header
    |-Destination Address : 33-33-00-00-00-01 
    |-Source Address      : 6A-02-B8-E0-0F-6F 
@@ -602,6 +1358,52 @@ IPv6 Header
    | -Source Address   : fe80::2831:9827:56d7:be6
    | -Destination Address: fe80::2831:9827:56d7:be6
 Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-FB 
+   |-Source Address      : 0E-E5-E2-96-50-3C 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 122 Bytes(size of packet)
+   | -Identification   : 61106
+   | -Fragment Offset  : 64
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 60110
+   | -Source Address   : 192.168.0.77
+   | -Destination Address: 224.0.0.251
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 5353
+   | -Destination Port : 5353
+   | -UDP Length       : 102 Bytes
+   | -UDP Checksum     : 12370
+Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-FB 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 378 Bytes(size of packet)
+   | -Identification   : 43804
+   | -Fragment Offset  : 64
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 11635
+   | -Source Address   : 192.168.0.63
+   | -Destination Address: 224.0.0.251
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 5353
+   | -Destination Port : 5353
+   | -UDP Length       : 358 Bytes
+   | -UDP Checksum     : 30732
+Ethernet Header
    |-Destination Address : 33-33-00-00-00-16 
    |-Source Address      : A4-63-A1-1A-45-95 
    |-Protocol            : 0x86dd 
@@ -615,6 +1417,666 @@ IPv6 Header
    | -Source Address   : fe80::2831:9827:56d7:be6
    | -Destination Address: fe80::2831:9827:56d7:be6
 Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 687264
+   | -Length           : 53504 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 64
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 46617
+   | -Destination Port : 443
+   | -UDP Length       : 209 Bytes
+   | -UDP Checksum     : 10438
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 8960 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 53
+   | -Source Address   : 2600:1901:1:c36::
+   | -Destination Address: 2600:1901:1:c36::
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 443
+   | -Destination Port : 46617
+   | -UDP Length       : 35 Bytes
+   | -UDP Checksum     : 1597
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 687264
+   | -Length           : 10496 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 64
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 46617
+   | -Destination Port : 443
+   | -UDP Length       : 41 Bytes
+   | -UDP Checksum     : 10270
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 46081 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 53
+   | -Source Address   : 2600:1901:1:c36::
+   | -Destination Address: 2600:1901:1:c36::
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 443
+   | -Destination Port : 46617
+   | -UDP Length       : 436 Bytes
+   | -UDP Checksum     : 5086
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 687264
+   | -Length           : 11008 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 64
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 46617
+   | -Destination Port : 443
+   | -UDP Length       : 43 Bytes
+   | -UDP Checksum     : 10272
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 241 Bytes(size of packet)
+   | -Identification   : 41362
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 13428
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 35.174.127.31
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 41614
+   | -Destination Port: 443
+   | -Sequence number: 756942943
+   | -Acknowledge Number : 962302276
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 25828
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 8448 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 53
+   | -Source Address   : 2600:1901:1:c36::
+   | -Destination Address: 2600:1901:1:c36::
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 443
+   | -Destination Port : 46617
+   | -UDP Length       : 33 Bytes
+   | -UDP Checksum     : 45119
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 2710
+   | -Fragment Offset  : 64
+   | -TTL              : 43
+   | -Protocol         : 6
+   | -Checksum         : 57645
+   | -Source Address   : 35.174.127.31
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 41614
+   | -Sequence number: 962302276
+   | -Acknowledge Number : 756943132
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 474
+   | -Checksum       : 26385
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-01 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 9
+   | -Flow label       : 434592
+   | -Length           : 32768 Bytes
+   | -Next header      : 58
+   | -Hop Limit        : 255
+   | -Source Address   : fe80::6802:b8ff:fee0:f6f
+   | -Destination Address: fe80::6802:b8ff:fee0:f6f
+ICMPv6 Header
+   | -Type     : 134
+   | -Code     : 0
+   | -Checksum : 53032
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-16 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 29696 Bytes
+   | -Next header      : 0
+   | -Hop Limit        : 1
+   | -Source Address   : fe80::2831:9827:56d7:be6
+   | -Destination Address: fe80::2831:9827:56d7:be6
+Ethernet Header
+   |-Destination Address : EC-FA-5C-39-99-E7 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 162 Bytes(size of packet)
+   | -Identification   : 26309
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 20854
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.168.0.63
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 39824
+   | -Destination Port: 8009
+   | -Sequence number: 3290746033
+   | -Acknowledge Number : 253281083
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 33455
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 162 Bytes(size of packet)
+   | -Identification   : 35799
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 11364
+   | -Source Address   : 192.168.0.63
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 8009
+   | -Destination Port: 39824
+   | -Sequence number: 253281083
+   | -Acknowledge Number : 3290746143
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 1408
+   | -Checksum       : 24195
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : EC-FA-5C-39-99-E7 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 26310
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 20963
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 192.168.0.63
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 39824
+   | -Destination Port: 8009
+   | -Sequence number: 3290746143
+   | -Acknowledge Number : 253281193
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 33345
+   | -Urgent Pointer : 0
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-16 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 29696 Bytes
+   | -Next header      : 0
+   | -Hop Limit        : 1
+   | -Source Address   : fe80::2831:9827:56d7:be6
+   | -Destination Address: fe80::2831:9827:56d7:be6
+Ethernet Header
+   |-Destination Address : FF-FF-FF-FF-FF-FF 
+   |-Source Address      : 68-57-2D-BE-60-23 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 200 Bytes(size of packet)
+   | -Identification   : 2394
+   | -Fragment Offset  : 0
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 61569
+   | -Source Address   : 192.168.0.161
+   | -Destination Address: 255.255.255.255
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 59253
+   | -Destination Port : 6667
+   | -UDP Length       : 180 Bytes
+   | -UDP Checksum     : 36009
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 87 Bytes(size of packet)
+   | -Identification   : 36192
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 59427
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 35.186.224.47
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 33432
+   | -Destination Port: 443
+   | -Sequence number: 22776232
+   | -Acknowledge Number : 3373461919
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 50534
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 4996
+   | -Fragment Offset  : 0
+   | -TTL              : 54
+   | -Protocol         : 6
+   | -Checksum         : 44067
+   | -Source Address   : 35.186.224.47
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 33432
+   | -Sequence number: 3373461919
+   | -Acknowledge Number : 22776267
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 266
+   | -Checksum       : 15544
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 01-00-5E-00-00-FB 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 646 Bytes(size of packet)
+   | -Identification   : 43918
+   | -Fragment Offset  : 64
+   | -TTL              : 255
+   | -Protocol         : 17
+   | -Checksum         : 11253
+   | -Source Address   : 192.168.0.63
+   | -Destination Address: 224.0.0.251
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 5353
+   | -Destination Port : 5353
+   | -UDP Length       : 626 Bytes
+   | -UDP Checksum     : 5104
+Ethernet Header
+   |-Destination Address : 33-33-00-00-00-FB 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 10
+   | -Flow label       : 1020912
+   | -Length           : 29186 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 255
+   | -Source Address   : fe80::eefa:5cff:fe39:99e7
+   | -Destination Address: fe80::eefa:5cff:fe39:99e7
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 5353
+   | -Destination Port : 5353
+   | -UDP Length       : 626 Bytes
+   | -UDP Checksum     : 54072
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 83 Bytes(size of packet)
+   | -Identification   : 5010
+   | -Fragment Offset  : 0
+   | -TTL              : 54
+   | -Protocol         : 6
+   | -Checksum         : 44022
+   | -Source Address   : 35.186.224.47
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 33432
+   | -Sequence number: 3373461919
+   | -Acknowledge Number : 22776267
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 266
+   | -Checksum       : 31083
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 52 Bytes(size of packet)
+   | -Identification   : 36193
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 59461
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 35.186.224.47
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 33432
+   | -Destination Port: 443
+   | -Sequence number: 22776267
+   | -Acknowledge Number : 3373461950
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 50499
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 33-33-00-00-0C-0C 
+   |-Source Address      : EC-FA-5C-39-99-E7 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 12
+   | -Flow label       : 474560
+   | -Length           : 11264 Bytes
+   | -Next header      : 17
+   | -Hop Limit        : 4
+   | -Source Address   : 2804:14d:4c86:9375:2048:1734:f8ad:9728
+   | -Destination Address: 2804:14d:4c86:9375:2048:1734:f8ad:9728
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 10101
+   | -Destination Port : 10101
+   | -UDP Length       : 44 Bytes
+   | -UDP Checksum     : 2096
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 8192 Bytes
+   | -Next header      : 58
+   | -Hop Limit        : 255
+   | -Source Address   : fe80::6802:b8ff:fee0:f6f
+   | -Destination Address: fe80::6802:b8ff:fee0:f6f
+ICMPv6 Header
+   | -Type     : 135
+   | -Code     : 0
+   | -Checksum : 10078
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x86dd 
+IPv6 Header
+   | -IP version       : 6
+   | -Traffic class    : 0
+   | -Flow label       : 0
+   | -Length           : 6144 Bytes
+   | -Next header      : 58
+   | -Hop Limit        : 255
+   | -Source Address   : 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+   | -Destination Address: 2804:14d:4c86:9375:e5e2:a7cb:b4fd:90b2
+ICMPv6 Header
+   | -Type     : 136
+   | -Code     : 0
+   | -Checksum : 33360
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 83 Bytes(size of packet)
+   | -Identification   : 5208
+   | -Fragment Offset  : 0
+   | -TTL              : 54
+   | -Protocol         : 6
+   | -Checksum         : 43824
+   | -Source Address   : 35.186.224.47
+   | -Destination Address: 192.168.0.139
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 443
+   | -Destination Port: 33432
+   | -Sequence number: 3373461919
+   | -Acknowledge Number : 22776267
+   | -Header Length      : 8 DWORDS or 32 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 1
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 266
+   | -Checksum       : 29358
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 64 Bytes(size of packet)
+   | -Identification   : 36194
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 6
+   | -Checksum         : 59448
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 35.186.224.47
+----------------TCP Packet----------------
+
+TCP Header:
+   | -Source Port: 33432
+   | -Destination Port: 443
+   | -Sequence number: 22776267
+   | -Acknowledge Number : 3373461950
+   | -Header Length      : 11 DWORDS or 44 BYTES
+   | -Urgent Flag         : 0
+   | -Acknowledgement Flag : 1
+   | -Push Flag            : 0
+   | -Reset Flag           : 0
+   | -Synchronise Flag     : 0
+   | -Finish Flag          : 0
+   | -Window: 501
+   | -Checksum       : 50511
+   | -Urgent Pointer : 0
+ * Aplicação HTTPS * 
+Ethernet Header
    |-Destination Address : 00-00-00-00-00-00 
    |-Source Address      : 00-00-00-00-00-00 
    |-Protocol            : 0x800 
@@ -623,17 +2085,17 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 89 Bytes(size of packet)
-   | -Identification   : 8649
+   | -Identification   : 49055
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 6805
+   | -Checksum         : 31934
    | -Source Address   : 127.0.0.1
    | -Destination Address: 127.0.0.53
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 47685
+   | -Source Port      : 57097
    | -Destination Port : 53
    | -UDP Length       : 69 Bytes
    | -UDP Checksum     : 65164
@@ -647,17 +2109,17 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 89 Bytes(size of packet)
-   | -Identification   : 8649
+   | -Identification   : 49055
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 6805
+   | -Checksum         : 31934
    | -Source Address   : 127.0.0.1
    | -Destination Address: 127.0.0.53
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 47685
+   | -Source Port      : 57097
    | -Destination Port : 53
    | -UDP Length       : 69 Bytes
    | -UDP Checksum     : 65164
@@ -671,17 +2133,17 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 89 Bytes(size of packet)
-   | -Identification   : 8650
+   | -Identification   : 49056
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 6804
+   | -Checksum         : 31933
    | -Source Address   : 127.0.0.1
    | -Destination Address: 127.0.0.53
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 47685
+   | -Source Port      : 57097
    | -Destination Port : 53
    | -UDP Length       : 69 Bytes
    | -UDP Checksum     : 65164
@@ -695,17 +2157,17 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 89 Bytes(size of packet)
-   | -Identification   : 8650
+   | -Identification   : 49056
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 6804
+   | -Checksum         : 31933
    | -Source Address   : 127.0.0.1
    | -Destination Address: 127.0.0.53
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 47685
+   | -Source Port      : 57097
    | -Destination Port : 53
    | -UDP Length       : 69 Bytes
    | -UDP Checksum     : 65164
@@ -718,21 +2180,21 @@ IPv4 Header
    | -IP version       : 4
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
-   | -Total length     : 99 Bytes(size of packet)
-   | -Identification   : 49409
+   | -Total length     : 89 Bytes(size of packet)
+   | -Identification   : 64363
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 32378
+   | -Checksum         : 17435
    | -Source Address   : 192.168.0.139
-   | -Destination Address: 181.213.132.5
+   | -Destination Address: 181.213.132.4
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 46080
+   | -Source Port      : 50014
    | -Destination Port : 53
-   | -UDP Length       : 79 Bytes
-   | -UDP Checksum     : 64366
+   | -UDP Length       : 69 Bytes
+   | -UDP Checksum     : 64355
  * Aplicação DNS * 
 Ethernet Header
    |-Destination Address : 6A-02-B8-E0-0F-6F 
@@ -742,21 +2204,21 @@ IPv4 Header
    | -IP version       : 4
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
-   | -Total length     : 99 Bytes(size of packet)
-   | -Identification   : 42607
+   | -Total length     : 89 Bytes(size of packet)
+   | -Identification   : 17127
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 39180
+   | -Checksum         : 64671
    | -Source Address   : 192.168.0.139
-   | -Destination Address: 181.213.132.5
+   | -Destination Address: 181.213.132.4
 
 ***********************UDP Packet*************************
 UDP Header
-   | -Source Port      : 56229
+   | -Source Port      : 33780
    | -Destination Port : 53
-   | -UDP Length       : 79 Bytes
-   | -UDP Checksum     : 64366
+   | -UDP Length       : 69 Bytes
+   | -UDP Checksum     : 64355
  * Aplicação DNS * 
 Ethernet Header
    |-Destination Address : A4-63-A1-1A-45-95 
@@ -766,21 +2228,69 @@ IPv4 Header
    | -IP version       : 4
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
-   | -Total length     : 115 Bytes(size of packet)
-   | -Identification   : 49409
+   | -Total length     : 254 Bytes(size of packet)
+   | -Identification   : 17127
    | -Fragment Offset  : 64
    | -TTL              : 124
    | -Protocol         : 17
-   | -Checksum         : 17002
-   | -Source Address   : 181.213.132.5
+   | -Checksum         : 49146
+   | -Source Address   : 181.213.132.4
    | -Destination Address: 192.168.0.139
 
 ***********************UDP Packet*************************
 UDP Header
    | -Source Port      : 53
-   | -Destination Port : 46080
-   | -UDP Length       : 95 Bytes
-   | -UDP Checksum     : 38872
+   | -Destination Port : 33780
+   | -UDP Length       : 234 Bytes
+   | -UDP Checksum     : 50918
+ * Aplicação DNS * 
+Ethernet Header
+   |-Destination Address : A4-63-A1-1A-45-95 
+   |-Source Address      : 6A-02-B8-E0-0F-6F 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 209 Bytes(size of packet)
+   | -Identification   : 64363
+   | -Fragment Offset  : 64
+   | -TTL              : 124
+   | -Protocol         : 17
+   | -Checksum         : 1955
+   | -Source Address   : 181.213.132.4
+   | -Destination Address: 192.168.0.139
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 53
+   | -Destination Port : 50014
+   | -UDP Length       : 189 Bytes
+   | -UDP Checksum     : 7651
+ * Aplicação DNS * 
+Ethernet Header
+   |-Destination Address : 6A-02-B8-E0-0F-6F 
+   |-Source Address      : A4-63-A1-1A-45-95 
+   |-Protocol            : 0x800 
+IPv4 Header
+   | -IP version       : 4
+   | -IP Header Length : 20 Bytes
+   | -Type of service  : 0
+   | -Total length     : 99 Bytes(size of packet)
+   | -Identification   : 14420
+   | -Fragment Offset  : 64
+   | -TTL              : 64
+   | -Protocol         : 17
+   | -Checksum         : 1833
+   | -Source Address   : 192.168.0.139
+   | -Destination Address: 181.213.132.4
+
+***********************UDP Packet*************************
+UDP Header
+   | -Source Port      : 43186
+   | -Destination Port : 53
+   | -UDP Length       : 79 Bytes
+   | -UDP Checksum     : 64365
  * Aplicação DNS * 
 Ethernet Header
    |-Destination Address : 00-00-00-00-00-00 
@@ -791,18 +2301,18 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 209 Bytes(size of packet)
-   | -Identification   : 58071
+   | -Identification   : 29305
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 22798
+   | -Checksum         : 51564
    | -Source Address   : 127.0.0.53
    | -Destination Address: 127.0.0.1
 
 ***********************UDP Packet*************************
 UDP Header
    | -Source Port      : 53
-   | -Destination Port : 47685
+   | -Destination Port : 57097
    | -UDP Length       : 189 Bytes
    | -UDP Checksum     : 65284
  * Aplicação DNS * 
@@ -815,18 +2325,18 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 209 Bytes(size of packet)
-   | -Identification   : 58071
+   | -Identification   : 29305
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 22798
+   | -Checksum         : 51564
    | -Source Address   : 127.0.0.53
    | -Destination Address: 127.0.0.1
 
 ***********************UDP Packet*************************
 UDP Header
    | -Source Port      : 53
-   | -Destination Port : 47685
+   | -Destination Port : 57097
    | -UDP Length       : 189 Bytes
    | -UDP Checksum     : 65284
  * Aplicação DNS * 
@@ -839,20 +2349,20 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 170 Bytes(size of packet)
-   | -Identification   : 15124
+   | -Identification   : 24381
    | -Fragment Offset  : 0
    | -TTL              : 250
    | -Protocol         : 17
-   | -Checksum         : 35360
-   | -Source Address   : 181.213.132.5
+   | -Checksum         : 26104
+   | -Source Address   : 181.213.132.4
    | -Destination Address: 192.168.0.139
 
 ***********************UDP Packet*************************
 UDP Header
    | -Source Port      : 53
-   | -Destination Port : 56229
+   | -Destination Port : 43186
    | -UDP Length       : 150 Bytes
-   | -UDP Checksum     : 2146
+   | -UDP Checksum     : 19149
  * Aplicação DNS * 
 Ethernet Header
    |-Destination Address : 00-00-00-00-00-00 
@@ -863,18 +2373,18 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 193 Bytes(size of packet)
-   | -Identification   : 58072
+   | -Identification   : 29306
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 22813
+   | -Checksum         : 51579
    | -Source Address   : 127.0.0.53
    | -Destination Address: 127.0.0.1
 
 ***********************UDP Packet*************************
 UDP Header
    | -Source Port      : 53
-   | -Destination Port : 47685
+   | -Destination Port : 57097
    | -UDP Length       : 173 Bytes
    | -UDP Checksum     : 65268
  * Aplicação DNS * 
@@ -887,18 +2397,18 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 193 Bytes(size of packet)
-   | -Identification   : 58072
+   | -Identification   : 29306
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 17
-   | -Checksum         : 22813
+   | -Checksum         : 51579
    | -Source Address   : 127.0.0.53
    | -Destination Address: 127.0.0.1
 
 ***********************UDP Packet*************************
 UDP Header
    | -Source Port      : 53
-   | -Destination Port : 47685
+   | -Destination Port : 57097
    | -UDP Length       : 173 Bytes
    | -UDP Checksum     : 65268
  * Aplicação DNS * 
@@ -911,19 +2421,19 @@ IPv4 Header
    | -IP Header Length : 20 Bytes
    | -Type of service  : 0
    | -Total length     : 60 Bytes(size of packet)
-   | -Identification   : 15760
+   | -Identification   : 27568
    | -Fragment Offset  : 64
    | -TTL              : 64
    | -Protocol         : 6
-   | -Checksum         : 57163
+   | -Checksum         : 19481
    | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
+   | -Destination Address: 20.189.173.2
 ----------------TCP Packet----------------
 
 TCP Header:
-   | -Source Port: 44546
+   | -Source Port: 39334
    | -Destination Port: 443
-   | -Sequence number: 881492347
+   | -Sequence number: 2924610291
    | -Acknowledge Number : 0
    | -Header Length      : 10 DWORDS or 40 BYTES
    | -Urgent Flag         : 0
@@ -933,381 +2443,7 @@ TCP Header:
    | -Synchronise Flag     : 1
    | -Finish Flag          : 0
    | -Window: 64240
-   | -Checksum       : 7695
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 52 Bytes(size of packet)
-   | -Identification   : 18990
-   | -Fragment Offset  : 64
-   | -TTL              : 105
-   | -Protocol         : 6
-   | -Checksum         : 43445
-   | -Source Address   : 20.42.72.131
-   | -Destination Address: 192.168.0.139
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 44546
-   | -Sequence number: 415302882
-   | -Acknowledge Number : 881492348
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 1
-   | -Finish Flag          : 0
-   | -Window: 65535
-   | -Checksum       : 52684
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 40 Bytes(size of packet)
-   | -Identification   : 15761
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 57182
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881492348
-   | -Acknowledge Number : 415302883
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 502
-   | -Checksum       : 7675
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 557 Bytes(size of packet)
-   | -Identification   : 15762
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 56664
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881492348
-   | -Acknowledge Number : 415302883
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 502
-   | -Checksum       : 8192
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 4475 Bytes(size of packet)
-   | -Identification   : 18991
-   | -Fragment Offset  : 64
-   | -TTL              : 105
-   | -Protocol         : 6
-   | -Checksum         : 39021
-   | -Source Address   : 20.42.72.131
-   | -Destination Address: 192.168.0.139
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 44546
-   | -Sequence number: 415302883
-   | -Acknowledge Number : 881492865
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 2051
-   | -Checksum       : 12110
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 40 Bytes(size of packet)
-   | -Identification   : 15763
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 57180
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881492865
-   | -Acknowledge Number : 415307318
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 474
-   | -Checksum       : 7675
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 198 Bytes(size of packet)
-   | -Identification   : 15764
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 57021
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881492865
-   | -Acknowledge Number : 415307318
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 7833
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 91 Bytes(size of packet)
-   | -Identification   : 18995
-   | -Fragment Offset  : 64
-   | -TTL              : 105
-   | -Protocol         : 6
-   | -Checksum         : 43401
-   | -Source Address   : 20.42.72.131
-   | -Destination Address: 192.168.0.139
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 44546
-   | -Sequence number: 415307318
-   | -Acknowledge Number : 881493023
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 2050
-   | -Checksum       : 19072
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 40 Bytes(size of packet)
-   | -Identification   : 15765
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 57178
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881493023
-   | -Acknowledge Number : 415307369
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 7675
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 1480 Bytes(size of packet)
-   | -Identification   : 15766
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 55737
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881493023
-   | -Acknowledge Number : 415307369
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 16350
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 653 Bytes(size of packet)
-   | -Identification   : 15767
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 56563
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881494463
-   | -Acknowledge Number : 415307369
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 37119
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 40 Bytes(size of packet)
-   | -Identification   : 18996
-   | -Fragment Offset  : 64
-   | -TTL              : 105
-   | -Protocol         : 6
-   | -Checksum         : 43451
-   | -Source Address   : 20.42.72.131
-   | -Destination Address: 192.168.0.139
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 44546
-   | -Sequence number: 415307369
-   | -Acknowledge Number : 881495076
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 2053
-   | -Checksum       : 59992
+   | -Checksum       : 33569
    | -Urgent Pointer : 0
  * Aplicação HTTPS * 
 Ethernet Header
@@ -1327,1106 +2463,16 @@ ICMPv6 Header
    | -Type     : 134
    | -Code     : 0
    | -Checksum : 53032
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-16 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 29696 Bytes
-   | -Next header      : 0
-   | -Hop Limit        : 1
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 54017 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 467 Bytes
-   | -UDP Checksum     : 35813
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 6914 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 539 Bytes
-   | -UDP Checksum     : 7399
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 56321 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 476 Bytes
-   | -UDP Checksum     : 20754
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 5890 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 535 Bytes
-   | -UDP Checksum     : 17171
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 56321 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 476 Bytes
-   | -UDP Checksum     : 20750
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 770 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 515 Bytes
-   | -UDP Checksum     : 22352
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 56321 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 476 Bytes
-   | -UDP Checksum     : 20752
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 4354 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 529 Bytes
-   | -UDP Checksum     : 14743
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 8962 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 547 Bytes
-   | -UDP Checksum     : 53128
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 4866 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 531 Bytes
-   | -UDP Checksum     : 8955
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 4866 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 531 Bytes
-   | -UDP Checksum     : 50591
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-16 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 29696 Bytes
-   | -Next header      : 0
-   | -Hop Limit        : 1
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 4866 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 531 Bytes
-   | -UDP Checksum     : 50591
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 8962 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 547 Bytes
-   | -UDP Checksum     : 53128
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 4354 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 529 Bytes
-   | -UDP Checksum     : 14743
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 56321 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 476 Bytes
-   | -UDP Checksum     : 20752
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 770 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 515 Bytes
-   | -UDP Checksum     : 22352
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 56321 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 476 Bytes
-   | -UDP Checksum     : 20750
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 5890 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 535 Bytes
-   | -UDP Checksum     : 17171
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 56321 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 476 Bytes
-   | -UDP Checksum     : 20754
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 6914 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 539 Bytes
-   | -UDP Checksum     : 7399
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-0C 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 44848
-   | -Length           : 54017 Bytes
-   | -Next header      : 17
-   | -Hop Limit        : 10
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 47650
-   | -Destination Port : 1900
-   | -UDP Length       : 467 Bytes
-   | -UDP Checksum     : 35813
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 426 Bytes(size of packet)
-   | -Identification   : 18997
-   | -Fragment Offset  : 64
-   | -TTL              : 105
-   | -Protocol         : 6
-   | -Checksum         : 43064
-   | -Source Address   : 20.42.72.131
-   | -Destination Address: 192.168.0.139
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 44546
-   | -Sequence number: 415307369
-   | -Acknowledge Number : 881495076
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 1
-   | -Window: 2053
-   | -Checksum       : 50067
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 150848
-   | -Length           : 18944 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 59
-   | -Source Address   : 2606:4700:4400::6812:215e
-   | -Destination Address: 2606:4700:4400::6812:215e
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 47142
-   | -Sequence number: 1668841023
-   | -Acknowledge Number : 2371763588
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 128
-   | -Checksum       : 64326
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 71 Bytes(size of packet)
-   | -Identification   : 15768
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 57144
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881495076
-   | -Acknowledge Number : 415307756
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 7706
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 4
-   | -Flow label       : 533456
-   | -Length           : 19968 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 47142
-   | -Destination Port: 443
-   | -Sequence number: 2371763588
-   | -Acknowledge Number : 1668841077
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 59091
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 40 Bytes(size of packet)
-   | -Identification   : 15769
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 6
-   | -Checksum         : 57174
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 20.42.72.131
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 44546
-   | -Destination Port: 443
-   | -Sequence number: 881495107
-   | -Acknowledge Number : 415307756
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 1
-   | -Window: 501
-   | -Checksum       : 7675
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 10
-   | -Flow label       : 150848
-   | -Length           : 5120 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 59
-   | -Source Address   : 2606:4700:4400::6812:215e
-   | -Destination Address: 2606:4700:4400::6812:215e
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 47142
-   | -Sequence number: 1668841077
-   | -Acknowledge Number : 2371763646
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 128
-   | -Checksum       : 25065
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 0
-   | -Total length     : 40 Bytes(size of packet)
-   | -Identification   : 18998
-   | -Fragment Offset  : 64
-   | -TTL              : 105
-   | -Protocol         : 6
-   | -Checksum         : 43449
-   | -Source Address   : 20.42.72.131
-   | -Destination Address: 192.168.0.139
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 44546
-   | -Sequence number: 415307756
-   | -Acknowledge Number : 881495108
-   | -Header Length      : 5 DWORDS or 20 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 2053
-   | -Checksum       : 59573
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 976384
-   | -Length           : 19200 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 37146
-   | -Destination Port: 443
-   | -Sequence number: 1779867389
-   | -Acknowledge Number : 808075504
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 63490
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 15
-   | -Flow label       : 155360
-   | -Length           : 8192 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 117
-   | -Source Address   : 2600:1901:1:ca7::
-   | -Destination Address: 2600:1901:1:ca7::
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 37146
-   | -Sequence number: 808075504
-   | -Acknowledge Number : 1779867432
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 272
-   | -Checksum       : 15533
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 2
-   | -Flow label       : 21488
-   | -Length           : 18432 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 117
-   | -Source Address   : 2600:1901:1:ca7::
-   | -Destination Address: 2600:1901:1:ca7::
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 37146
-   | -Sequence number: 808075504
-   | -Acknowledge Number : 1779867432
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 272
-   | -Checksum       : 5119
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 976384
-   | -Length           : 8192 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 37146
-   | -Destination Port: 443
-   | -Sequence number: 1779867432
-   | -Acknowledge Number : 808075544
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 63447
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 192
-   | -Total length     : 311 Bytes(size of packet)
-   | -Identification   : 47735
-   | -Fragment Offset  : 64
-   | -TTL              : 64
-   | -Protocol         : 17
-   | -Checksum         : 64673
-   | -Source Address   : 192.168.0.139
-   | -Destination Address: 192.168.0.1
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 68
-   | -Destination Port : 67
-   | -UDP Length       : 291 Bytes
-   | -UDP Checksum     : 33553
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x800 
-IPv4 Header
-   | -IP version       : 4
-   | -IP Header Length : 20 Bytes
-   | -Type of service  : 192
-   | -Total length     : 345 Bytes(size of packet)
-   | -Identification   : 40134
-   | -Fragment Offset  : 0
-   | -TTL              : 64
-   | -Protocol         : 17
-   | -Checksum         : 23089
-   | -Source Address   : 192.168.0.1
-   | -Destination Address: 192.168.0.139
-
-***********************UDP Packet*************************
-UDP Header
-   | -Source Port      : 67
-   | -Destination Port : 68
-   | -UDP Length       : 325 Bytes
-   | -UDP Checksum     : 18553
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 918384
-   | -Length           : 18176 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 52928
-   | -Destination Port: 443
-   | -Sequence number: 471817102
-   | -Acknowledge Number : 2211417283
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 51186
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-01 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 9
-   | -Flow label       : 434592
-   | -Length           : 32768 Bytes
-   | -Next header      : 58
-   | -Hop Limit        : 255
-   | -Source Address   : fe80::6802:b8ff:fee0:f6f
-   | -Destination Address: fe80::6802:b8ff:fee0:f6f
-ICMPv6 Header
-   | -Type     : 134
-   | -Code     : 0
-   | -Checksum : 53032
-Ethernet Header
-   |-Destination Address : 33-33-00-00-00-16 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 0
-   | -Flow label       : 0
-   | -Length           : 29696 Bytes
-   | -Next header      : 0
-   | -Hop Limit        : 1
-   | -Source Address   : fe80::2831:9827:56d7:be6
-   | -Destination Address: fe80::2831:9827:56d7:be6
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 4
-   | -Flow label       : 107776
-   | -Length           : 18176 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 52
-   | -Source Address   : 2620:0:861:ed1a::1
-   | -Destination Address: 2620:0:861:ed1a::1
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 52928
-   | -Sequence number: 2211417283
-   | -Acknowledge Number : 471817141
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 83
-   | -Checksum       : 24670
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 918384
-   | -Length           : 8192 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 52928
-   | -Destination Port: 443
-   | -Sequence number: 471817141
-   | -Acknowledge Number : 2211417322
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 51147
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 2
-   | -Flow label       : 21488
-   | -Length           : 18432 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 117
-   | -Source Address   : 2600:1901:1:ca7::
-   | -Destination Address: 2600:1901:1:ca7::
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 37146
-   | -Sequence number: 808075504
-   | -Acknowledge Number : 1779867432
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 272
-   | -Checksum       : 3790
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 976384
-   | -Length           : 11264 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 37146
-   | -Destination Port: 443
-   | -Sequence number: 1779867432
-   | -Acknowledge Number : 808075544
-   | -Header Length      : 11 DWORDS or 44 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 63459
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : A4-63-A1-1A-45-95 
-   |-Source Address      : 6A-02-B8-E0-0F-6F 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 4
-   | -Flow label       : 107776
-   | -Length           : 18176 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 52
-   | -Source Address   : 2620:0:861:ed1a::1
-   | -Destination Address: 2620:0:861:ed1a::1
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 443
-   | -Destination Port: 52928
-   | -Sequence number: 2211417283
-   | -Acknowledge Number : 471817141
-   | -Header Length      : 8 DWORDS or 32 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 1
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 83
-   | -Checksum       : 23886
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
-Ethernet Header
-   |-Destination Address : 6A-02-B8-E0-0F-6F 
-   |-Source Address      : A4-63-A1-1A-45-95 
-   |-Protocol            : 0x86dd 
-IPv6 Header
-   | -IP version       : 6
-   | -Traffic class    : 5
-   | -Flow label       : 918384
-   | -Length           : 11264 Bytes
-   | -Next header      : 6
-   | -Hop Limit        : 64
-   | -Source Address   : 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-   | -Destination Address: 2804:14d:4c86:9375:28fc:d456:5cd4:4894
-----------------TCP Packet----------------
-
-TCP Header:
-   | -Source Port: 52928
-   | -Destination Port: 443
-   | -Sequence number: 471817141
-   | -Acknowledge Number : 2211417322
-   | -Header Length      : 11 DWORDS or 44 BYTES
-   | -Urgent Flag         : 0
-   | -Acknowledgement Flag : 1
-   | -Push Flag            : 0
-   | -Reset Flag           : 0
-   | -Synchronise Flag     : 0
-   | -Finish Flag          : 0
-   | -Window: 501
-   | -Checksum       : 51159
-   | -Urgent Pointer : 0
- * Aplicação HTTPS * 
 
 -------Estatística----------
 - Total de pacotes capturados: 100
-- Pacotes ARP: 0.00%
-- Pacotes IPv6: 66.00%
-- Pacotes IPv4: 34.00%
+- Pacotes ARP: 2.00%
+- Pacotes IPv6: 41.00%
+- Pacotes IPv4: 57.00%
 - Pacotes ICMP: 0.00%
 - Pacotes ICMPv6: 0.00%
-- Pacotes TCP: 32.00%
-- Pacotes UDP: 57.00%
-- Outros: 0
+- Pacotes TCP: 37.00%
+- Pacotes UDP: 41.00%
+- Protocolo de aplicação mais usado nas transmissões: HTTPS
+- Protocolo de aplicação mais usado nas recepções: HTTPS
+ Endereço da márquina que mais transmitiu pacotes: 6A-02-B8-E0-0F-6F 
